@@ -1,1 +1,20 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sevice worker</title>
+</head>
+
+<body>
+    <div id="status"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            document.querySelector('#status').textContent = "Has service worker";
+
+        } else {
+            document.querySelector('#status').textContent = "Does not have serviceworker";
+        }
+    </script>
+</body>
+
+</html>
